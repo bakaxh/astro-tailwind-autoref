@@ -1,6 +1,6 @@
 {
   "name": "astro-tailwind-autoref",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "PostCSS plugin to inject @reference tailwindcss into .astro files when @apply is used",
   "type": "module",
   "main": "index.js",
@@ -22,7 +22,10 @@
     "scss",
     "sass",
     "css",
-    "autoref"
+    "autoref",
+    "astro-component",
+    "astro-integration",
+    "withastro"
   ],
   "peerDependencies": {
     "postcss": "^8.0.0"

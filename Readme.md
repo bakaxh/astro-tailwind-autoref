@@ -19,6 +19,11 @@ yarn add astro-tailwind-autoref
 
 ## Usage
 
+Install portcss and @tailwindcss/vite
+```bash
+npm install portcss @tailwindcss/vite
+```
+
 In astro.config.mjs:
 
 ```js
