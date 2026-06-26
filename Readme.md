@@ -2,6 +2,8 @@
 
 A PostCSS plugin that automatically injects `@reference "tailwindcss"` into `.astro` styles when `@apply` is detected.
 
+Works on different styles language block, eg: `<style lang="scss">` for @tailwindcss/vite 4.0+ module.
+
 ## Install
 
 npm:
