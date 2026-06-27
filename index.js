@@ -6,6 +6,7 @@ export default function addTailwindcssReference(options = {}) {
     trigger = '@apply',
     include = null,
     exclude = null,
+    debug = false,
   } = options;
 
   return {
@@ -31,8 +32,9 @@ export default function addTailwindcssReference(options = {}) {
       if (css.includes(`@reference "${reference}"`)) return;
       if (css.includes(trigger)) {
         root.prepend({ name: 'reference', params: `"${reference}"` });
-        
-      console.log(`[astro-tailwind-autoref] Injected @reference "${reference}" into: ${from}`);
+        if (debug) {
+          console.log(`[astro-tailwind-autoref] Injected @reference "${reference}" into: ${from}`);
+        }
       }
     },
   };

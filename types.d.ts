@@ -5,5 +5,6 @@ declare module 'astro-tailwind-autoref' {
     trigger?: string;
     include?: string[] | null;
     exclude?: string[] | null;
+    debug?: boolean;
   }): Plugin;
 }
