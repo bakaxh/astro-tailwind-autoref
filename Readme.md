@@ -55,6 +55,7 @@ export default defineConfig({
 | `trigger` | `string` | `'@apply'` | Keyword that triggers injection |
 | `include` | `string[]` | `['**/*.astro']` | Glob patterns to include |
 | `exclude` | `string[]` | `[]` | Glob patterns to exclude |
+| `debug` | `boolean` | `false` | Enable debug logging |
 
 ## How it works
 
